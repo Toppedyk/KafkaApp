@@ -14,12 +14,9 @@ import org.apache.kafka.clients.producer.ProducerRecord;
 public class SimpleProducer {
   public static void main(String[] args) throws Exception{
      // Check arguments length value
-     if(args.length == 0){
-        System.out.println("Enter topic name");
-        return;
-     }
+
      //Assign topicName to string variable
-     String topicName = args[0].toString();
+     String topicName = "demo_java";
      // create instance for properties to access producer configs
      Properties props = new Properties();
      //Assign localhost id

@@ -9,12 +9,9 @@ import org.apache.kafka.clients.consumer.ConsumerRecord;
 
 public class SimpleConsumer {
    public static void main(String[] args) throws Exception {
-      if(args.length == 0){
-         System.out.println("Enter topic name");
-         return;
-      }
+
       //Kafka consumer configuration settings
-      String topicName = args[0].toString();
+      String topicName = "demo_java";
       Properties props = new Properties();
       
       props.put("bootstrap.servers", "localhost:9092");
